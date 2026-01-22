@@ -1,0 +1,22 @@
+{
+  "name": "teste-tecnico-qa",
+  "version": "1.0.0",
+  "description": "Desafio técnico QA - Cypress e Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^13.0.0",
+    "esbuild": "^0.20.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "e2e/**/*.{js,ts}",
+      "support/step_definitions/**/*.{js,ts}"
+    ]
+  }
+}
